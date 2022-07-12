@@ -5,7 +5,7 @@ import { background } from "./background";
 const Address = styled.p`
   width: 165px;
   height: 92px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   font-style: italic;
   color: #fff;
@@ -21,7 +21,6 @@ const SubTitle = styled.h3`
   margin: 0;
 `;
 const Title = styled.h1`
-  color: red;
   font-size: 50px;
   font-weight: 900;
   font-style: italic;
@@ -73,15 +72,21 @@ export const Homepage = memo(function Homepage() {
         <Address>
           {isClientSide ? (
             <>
+              Klarluft BV
+              <br />
               {atob("R2FsdmFuaXN0cmFhdCA3MDc=")}
               <br />
               {atob("MzAyOUFEIFJvdHRlcmRhbQ==")}
               <br />
               {atob("VGhlIE5ldGhlcmxhbmRz")}
               <br />
-              {atob("VkFUOiBOTDAwMzkxNjgyMkIyNw==")}
               <br />
-              {atob("S1ZLOiA4NDEzNjQ1Ng==")}
+              {atob("VkFUOiBOTDg2NDEyODkxNUIwMQ==")}
+              <br />
+              {atob("S1ZLOiA4Njg3NTU5MA==")}
+              <br />
+              <br />
+              {atob("Y29udGFjdEBrbGFybHVmdC5jb20=")}
             </>
           ) : null}
         </Address>
