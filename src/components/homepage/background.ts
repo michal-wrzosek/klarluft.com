@@ -10,11 +10,12 @@ interface Star {
 export const background = async (backgroundContainer: HTMLDivElement) => {
   const PIXI = await import("pixi.js");
 
-  const app = new PIXI.Application({ resizeTo: window });
-  backgroundContainer.appendChild(app.view);
+  const app = new PIXI.Application();
+  await app.init({ resizeTo: window });
+  backgroundContainer.appendChild(app.canvas);
 
   // Get the texture for rope.
-  const starTexture = PIXI.Texture.from("star.png");
+  const starTexture = await PIXI.Assets.load("/star.png");
 
   const starAmount = 1000;
   let cameraZ = 0;
@@ -62,7 +63,7 @@ export const background = async (backgroundContainer: HTMLDivElement) => {
   app.ticker.add((delta) => {
     // Simple easing. This should be changed to proper easing function when used for real.
     speed += (warpSpeed - speed) / 20;
-    cameraZ += delta * 10 * (speed + baseSpeed);
+    cameraZ += delta.deltaTime * 10 * (speed + baseSpeed);
     for (let i = 0; i < starAmount; i++) {
       const star = stars[i];
       if (star.z < cameraZ) randomizeStar(star);

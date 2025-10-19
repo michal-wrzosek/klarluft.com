@@ -11,6 +11,12 @@ const Address = styled.p`
   color: #fff;
   -webkit-font-smoothing: antialiased;
   margin: 40px 0 0 0;
+
+  a:link,
+  a:visited {
+    color: #fff;
+    text-decoration: underline;
+  }
 `;
 const SubTitle = styled.h3`
   font-size: 12px;
@@ -26,7 +32,7 @@ const Title = styled.h1`
   font-style: italic;
   color: #fff;
   -webkit-font-smoothing: antialiased;
-  margin: 140px 0 0 0;
+  margin: 0 0 0 0;
 `;
 const FullPageContainer = styled.div`
   position: absolute;
@@ -52,11 +58,8 @@ const Container = styled(FullPageContainer)`
 
 export const Homepage = memo(function Homepage() {
   const backgroundContainerRef = useRef<HTMLDivElement>(null);
-  const isClientSide = typeof window !== "undefined";
 
   useEffect(() => {
-    if (!isClientSide) return;
-
     const backgroundContainer = backgroundContainerRef.current;
     if (!backgroundContainer) return;
 
@@ -70,25 +73,26 @@ export const Homepage = memo(function Homepage() {
         <Title>Klarluft</Title>
         <SubTitle>Software Engineering Services</SubTitle>
         <Address>
-          {isClientSide ? (
-            <>
-              Klarluft BV
-              <br />
-              {atob("R2FsdmFuaXN0cmFhdCA3MDc=")}
-              <br />
-              {atob("MzAyOUFEIFJvdHRlcmRhbQ==")}
-              <br />
-              {atob("VGhlIE5ldGhlcmxhbmRz")}
-              <br />
-              <br />
-              {atob("VkFUOiBOTDg2NDEyODkxNUIwMQ==")}
-              <br />
-              {atob("S1ZLOiA4Njg3NTU5MA==")}
-              <br />
-              <br />
-              {atob("Y29udGFjdEBrbGFybHVmdC5jb20=")}
-            </>
-          ) : null}
+          Klarluft BV
+          <br />
+          {atob("VmFuIEFlcnNzZW5sYWFuIDQwQw==")}
+          <br />
+          {atob("MzAzOUtFIFJvdHRlcmRhbQ==")}
+          <br />
+          {atob("VGhlIE5ldGhlcmxhbmRz")}
+          <br />
+          <br />
+          {atob("VkFUOiBOTDg2NDEyODkxNUIwMQ==")}
+          <br />
+          {atob("S1ZLOiA4Njg3NTU5MA==")}
+          <br />
+          <br />
+          {atob("Y29udGFjdEBrbGFybHVmdC5jb20=")}
+          <br />
+          <br />
+          More info:
+          <br />
+          <a href="https://michal.wrzosek.pl">michal.wrzosek.pl</a>
         </Address>
       </TextContainer>
     </Container>
