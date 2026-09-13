@@ -6,10 +6,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "15.5.6",
+    "next": "^15.5.25",
     "pixi.js": "^8.14.0",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "styled-components": "^6.1.19"
   },
   "devDependencies": {
@@ -18,7 +18,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.2.1",
+    "eslint-config-next": "^15.5.25",
     "typescript": "^5"
   }
 }

@@ -1,3 +1,7 @@
 [build]
   command = "npm run build"
   publish = ".next"
+
+[build.environment]
+  # Next 15 needs Node 18.18 or newer; pin it so the build does not depend on the site's default.
+  NODE_VERSION = "22"
