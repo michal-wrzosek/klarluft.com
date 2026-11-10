@@ -60,20 +60,6 @@ const Body = styled(Container)`
   }
 `;
 
-const Kicker = styled.div`
-  margin-bottom: 26px;
-  font-family: ${font.mono};
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  color: ${color.accent};
-
-  ${media.phone} {
-    margin-bottom: 18px;
-    font-size: 10.5px;
-  }
-`;
-
 const Title = styled.h1`
   margin: 0;
   font-family: ${font.display};
@@ -251,16 +237,16 @@ export function Hero() {
       <Fade />
       <Nav />
       <Body>
-        <Kicker>pitupitu, from Klarluft</Kicker>
         <Title>
-          Talk to
+          Trading floors.
           <br />
-          your coding agents.
+          Power grids.
+          <br />
+          Patient records.
         </Title>
         <Lede>
-          Start, check on and unblock Claude Code, Codex and more by voice, from your phone, on any
-          of your machines. Built by Klarluft, an independent engineering studio for trading
-          floors, power grids and patient records.
+          Klarluft is an independent engineering studio. We work inside trading departments,
+          energy desks and clinical systems. The same hands now ship products of our own.
         </Lede>
         <Actions>
           <Primary href="#pitupitu" onPointerEnter={() => starfield.current?.warp(1400)}>
