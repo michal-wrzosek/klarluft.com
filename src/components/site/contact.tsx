@@ -220,6 +220,10 @@ export function Contact() {
           </Pitch>
           <Email href={`mailto:${company.email}`}>{company.email}</Email>
           <Elsewhere>
+            <Outbound href={links.pitupitu}>
+              pitupitu.chat
+              <ArrowOut size={13} />
+            </Outbound>
             <Outbound href={links.gitwarren}>
               gitwarren.com
               <ArrowOut size={13} />

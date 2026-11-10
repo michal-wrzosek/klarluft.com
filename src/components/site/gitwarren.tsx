@@ -311,7 +311,7 @@ export function GitWarren() {
     <Section id="gitwarren">
       <Grid>
         <Intro>
-          <Badge>NEW — OUR OWN PRODUCT</Badge>
+          <Badge>ALSO OURS — FREE AND OPEN SOURCE</Badge>
           <Name>
             <Icon src="/gitwarren/icon.png" alt="" width={128} height={128} />
             GitWarren
