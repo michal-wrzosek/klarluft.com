@@ -82,7 +82,7 @@ const points = [
   },
   {
     heading: "Products, not just tickets",
-    body: "GitWarren is ours end to end: three operating systems, code signing and notarisation, silent auto-update, a Homebrew tap, an MCP server. We know what shipping actually costs, because we pay it.",
+    body: "pitupitu and GitWarren are ours end to end: a voice service with apps on the App Store and Google Play, desktop builds for three operating systems with code signing and notarisation, silent auto-update, a Homebrew tap, an MCP server. We know what shipping actually costs, because we pay it.",
   },
 ];
 

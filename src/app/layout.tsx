@@ -26,7 +26,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 const description =
-  "The independent engineering studio behind GitWarren. Software for trading floors, power grids and patient records — Shell, Eneco, DZ Bank, Quin, WellSync.";
+  "The independent engineering studio behind pitupitu and GitWarren. Software for trading floors, power grids and patient records — Shell, Eneco, DZ Bank, Quin, WellSync.";
 
 export const metadata: Metadata = {
   title: "Klarluft — Software engineering studio",
