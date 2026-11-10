@@ -14,7 +14,7 @@ export interface ClientLogo {
 export const clientLogos: ClientLogo[] = [
   { name: "Shell", src: "/logos/shell.svg", width: 150, height: 139, size: 46, phoneSize: 38 },
   { name: "Eneco", src: "/logos/eneco.svg", width: 152, height: 66, size: 36, phoneSize: 30 },
-  { name: "DZ Bank", src: "/logos/dzbank.svg", width: 300, height: 48, size: 27, phoneSize: 22 },
+  { name: "DZ Bank", src: "/logos/dzbank.svg", width: 300, height: 40, size: 23, phoneSize: 18 },
   { name: "Quin", src: "/logos/quin.png", width: 661, height: 260, size: 34, phoneSize: 28, invert: true },
   { name: "WellSync", src: "/logos/wellsync.png", width: 720, height: 279, size: 44, phoneSize: 36 },
   { name: "Bitbond", src: "/logos/bitbond.png", width: 600, height: 160, size: 29, phoneSize: 24, invert: true },
