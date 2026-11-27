@@ -119,6 +119,7 @@ const MenuButton = styled.button<{ $open: boolean }>`
 
 const sections = [
   { href: "#pitupitu", label: "pitupitu" },
+  { href: "#dataklar", label: "dataKlar" },
   { href: "#gitwarren", label: "GitWarren" },
   { href: "#work", label: "Work" },
   { href: "#studio", label: "Studio" },

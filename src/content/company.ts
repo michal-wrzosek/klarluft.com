@@ -14,6 +14,7 @@ export const company = {
 
 export const links = {
   pitupitu: "https://pitupitu.chat",
+  dataklar: "https://dataklar.com",
   gitwarren: "https://gitwarren.com",
   personal: "https://michal.wrzosek.pl",
   github: "https://github.com/klarluft",

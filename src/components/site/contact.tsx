@@ -224,6 +224,10 @@ export function Contact() {
               pitupitu.chat
               <ArrowOut size={13} />
             </Outbound>
+            <Outbound href={links.dataklar}>
+              dataklar.com
+              <ArrowOut size={13} />
+            </Outbound>
             <Outbound href={links.gitwarren}>
               gitwarren.com
               <ArrowOut size={13} />
