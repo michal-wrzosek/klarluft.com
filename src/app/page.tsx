@@ -3,6 +3,7 @@
 import { GlobalStyle } from "@/styles/global-styles";
 import { Hero } from "@/components/site/hero";
 import { Pitupitu } from "@/components/site/pitupitu";
+import { Dataklar } from "@/components/site/dataklar";
 import { GitWarren } from "@/components/site/gitwarren";
 import { Work } from "@/components/site/work";
 import { Studio } from "@/components/site/studio";
@@ -16,6 +17,7 @@ export default function Page() {
       <Hero />
       <main>
         <Pitupitu />
+        <Dataklar />
         <GitWarren />
         <Work />
         <Studio />
